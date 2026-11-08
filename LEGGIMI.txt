@@ -1,0 +1,40 @@
+S33 - ACID · v1 (1.0.0)
+=======================
+
+Bass line acida: un synth monofonico con sequencer a 16 step, accento e slide.
+Funziona da sola (PWA) e come modulo della S33 - Mother Board.
+
+IL SUONO
+  - SAW / SQUARE: dente di sega o onda quadra. TUNE ±12 semitoni.
+  - CUTOFF, RESO: filtro a 4 poli risonante, con saturazione (al massimo della risonanza fischia).
+  - ENV MOD: quanto l'inviluppo apre il filtro a ogni nota. DECAY: quanto dura l'apertura.
+  - ACCENT: quanto le note accentate sono più forti e più aperte. Più accenti di fila
+    fanno salire il filtro sempre di più (il "miagolio" tipico).
+  - DRIVE: distorsione dopo il filtro. VOLUME.
+  Doppio clic su una manopola: torna al valore iniziale. Maiusc mentre trascini: regolazione fine.
+
+IL SEQUENCER
+  - Clic sulla griglia (le note da Do a Do sopra) per mettere una nota; un altro clic sulla
+    stessa la toglie. Trascinando si disegnano più step.
+  - OCT: ottava sopra (▲) o sotto (▼). ACC: accento. SLIDE: la nota scivola nella successiva
+    senza staccare. GATE: NOTE, TIE (allunga la nota prima), REST (pausa).
+  - 8 pattern (1–8). Mentre suona, il cambio di pattern aspetta la fine di quello in corso
+    (il numero lampeggia). LENGTH 1–16 step, SWING 50–75%, TRANSPOSE ±12.
+  - RANDOM: una linea nuova a caso. MUTATE: cambia qualche step. CLEAR, ◀ ▶ (sposta di uno step),
+    COPY e PASTE tra pattern.
+  - KEY TRANSPOSE acceso: mentre il pattern suona, un tasto della tastiera MIDI lo trasporta
+    (Do centrale = nessun cambio). A sequencer fermo la tastiera suona la Acid: due tasti
+    legati fanno lo slide, velocity forte (≥ 100) fa l'accento.
+  - CC MIDI: 74 cutoff, 71 reso, 73 decay, 75 env mod, 76 accent.
+  - Barra spaziatrice: Play / Stop. BPM: trascina o rotella.
+
+NELLA MOTHER BOARD
+  Si aggiunge dalla lista dei moduli (ACID). I cavi si fanno da soli: Clock → CLK, MIDI In → MIDI,
+  uscita → Output. Con il Clock collegato il pattern parte e si ferma con il Play della board ed
+  è a tempo con gli altri moduli. Il pattern si vede anche nel rettangolo del modulo.
+  Si può mettere CHORDS (uscita BASS) prima della Acid per suonarla dalla tastiera insieme a un altro synth.
+
+INSTALLARE
+  Come le altre app S33: su GitHub Pages, oppure da Terminale nella cartella
+    python3 -m http.server 8034   e poi http://localhost:8034 in Chrome → Installa.
+  Per una versione nuova cambia VERSIONE in sw.js.

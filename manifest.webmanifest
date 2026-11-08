@@ -1,0 +1,19 @@
+{
+  "name": "S33 - Acid",
+  "short_name": "Acid",
+  "description": "Acid bass line synthesizer with a 16-step sequencer: saw or square, resonant filter, accent and slide.",
+  "lang": "en",
+  "id": "s33-acid",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#0b0c0a",
+  "theme_color": "#121310",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
